@@ -1,1 +1,55 @@
-<p>crear-persona works!</p>
+<div>
+  <form [formGroup]="crearPersonaForm" (ngSubmit)="submit()">
+    <div>
+      <mat-card class="container">
+        <mat-card-title>Datos de Persona</mat-card-title>
+
+        <div>
+          <mat-form-field>
+            <input
+              type="text"
+              formControlName="nombre"
+              matInput
+              placeholder="Nombre"
+            />
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field>
+            <input
+              type="text"
+              formControlName="apellido"
+              matInput
+              placeholder="Apellido"
+            />
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field>
+            <input
+              type="number"
+              formControlName="edad"
+              matInput
+              placeholder="Edad"
+            />
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field>
+            <input
+              type="text"
+              formControlName="direccion"
+              matInput
+              placeholder="Direccion"
+            />
+          </mat-form-field>
+        </div>
+        <mat-card-actions>
+          <div>
+            <button mat-raised-button color="primary">Guardar</button>
+          </div>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </form>
+</div>
