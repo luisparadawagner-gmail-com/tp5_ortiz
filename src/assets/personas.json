@@ -1,0 +1,26 @@
+[
+  {
+    "nombre": "Carlos",
+    "apellido": "Mancuso",
+    "edad": 44,
+    "direccion": "Roca 4242"
+  },
+  {
+    "nombre": "Roberto",
+    "apellido": "Toscani",
+    "edad": 76,
+    "direccion": "Brow 123"
+  },
+  {
+    "nombre": "Pedro",
+    "apellido": "Piaggi",
+    "edad": 23,
+    "direccion": "Belgrano 24"
+  },
+  {
+    "nombre": "Ricardo",
+    "apellido": "Fort",
+    "edad": 55,
+    "direccion": "Miami 100"
+  }
+]
