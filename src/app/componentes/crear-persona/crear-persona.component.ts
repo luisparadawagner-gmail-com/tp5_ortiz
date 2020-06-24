@@ -17,17 +17,17 @@ export class CrearPersonaComponent implements OnInit {
   persona: Persona;
   param: any;
 
+  showCrearPersona: boolean = true;
   showConsultarPersona: boolean = false;
 
   ngOnInit() {
     debugger;
-
     this.param = this.rutaActiva.snapshot.params;
 
     if (Object.keys(this.param).length) {
       this.persona = this.param;
     } else {
-      this.persona = this.crearPersona;
+      this.persona = this.param;
     }
 
     this.initForm(this.persona);
@@ -44,7 +44,10 @@ export class CrearPersonaComponent implements OnInit {
 
   submit() {
     debugger;
-    this.crearPersona = this.crearPersonaForm.value;
+    this.crearPersonaForm.value;
+    this.persona = this.crearPersonaForm.value;
+
     this.showConsultarPersona = true;
+    this.showCrearPersona = false;
   }
 }

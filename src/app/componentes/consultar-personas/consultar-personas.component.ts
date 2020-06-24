@@ -2,6 +2,13 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { ConsultarPersonaService } from './../../servicios/consultar-persona.service';
 
+export interface Persona {
+  nombre: string;
+  apellido: string;
+  edad: number;
+  direccion: string;
+}
+
 @Component({
   selector: 'app-consultar-personas',
   templateUrl: './consultar-personas.component.html',
